@@ -1,6 +1,10 @@
+import { Albert_Sans, Montserrat_Alternates } from "next/font/google";
+import { RootLayoutProp } from "@/app/types";
 import React from "react";
-import { Albert_Sans, Montserrat_Alternates } from "next/font/google"
+import Link from 'next/link';
 import "./globals.css";
+
+//Images
 import Image from 'next/image';
 
 const albert_Sans = Albert_Sans ({
@@ -19,17 +23,23 @@ const montserrat = Montserrat_Alternates ({
 import mobileLogo from "@/public/mobile_logo.svg";
 import desktopLogo from "@/public/desktop_logo.svg";
 
-export default function RootLayout({children}: Readonly<{ children: React.ReactNode; }>) {
+export default function RootLayout({children}: RootLayoutProp) {
     return (
         <html lang="en">
         <body className={`${albert_Sans.className} ${montserrat.variable}`}>
         <header>
             <nav className="flex items-center justify-between px-[25px] py-3.5">
-                <Image className="block sm:hidden" src={mobileLogo} alt="Mobile logo" />
-                <Image className="hidden sm:block" src={desktopLogo} alt="Desktop logo" />
+                <div>
+                    <Link href="/">
+                        <Image className="block sm:hidden" src={mobileLogo} alt="Mobile logo" />
+                    </Link>
+                    <Link href="/">
+                        <Image className="hidden sm:block" src={desktopLogo} alt="Desktop logo" />
+                    </Link>
+                </div>
                 <ul className="flex gap-x-8">
-                    <li className="text-[14px] text-[#606060] tracking-[5%] font-semibold uppercase"><a href="#">3d Models</a></li>
-                    <li className="text-[14px] text-[#606060] tracking-[5%] font-semibold uppercase"><a href="/about">About</a></li>
+                    <li className="text-[14px] text-[#606060] tracking-[5%] font-semibold uppercase"><Link href="/models">3d Models</Link></li>
+                    <li className="text-[14px] text-[#606060] tracking-[5%] font-semibold uppercase"><Link href="/about">About</Link></li>
                 </ul>
             </nav>
         </header>

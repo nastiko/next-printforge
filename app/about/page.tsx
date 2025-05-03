@@ -1,7 +1,10 @@
 import Image from "next/image";
 
 //Images
-import aboutFrame from "@/public/about-frame.png"
+import aboutFrame from "@/public/about-frame.png";
+import modelsIcon from "@/public/models.svg";
+import communityIcon from "@/public/community.svg";
+import flagIcon from "@/public/flag.svg";
 
 export default function About() {
     return (
@@ -27,7 +30,7 @@ export default function About() {
             <section className="max-w-7xl flex flex-col lg:flex-row gap-y-8 mx-auto px-[25px] xl:px-0">
                 <div>
                     <div className="flex items-center gap-x-2">
-                        <img className="w-[32px] h-[32px]" src="/models.svg" alt="Models icon"/>
+                        <Image className="w-[32px] h-[32px]" src={modelsIcon} width={32} height={32} alt="Models icon"/>
                         <h6 className="text-[28px] text-[#1E1E1E] font-bold">100K+ Models</h6>
                     </div>
                     <p className="text-[20px] font-normal text-[#1E1E1E]">Access our vast library of
@@ -36,7 +39,7 @@ export default function About() {
                 <div className="w-[1px] h-[123px] hidden lg:block border-[1px] border-[#DDDDDD] mx-8"></div>
                 <div>
                     <div className="flex items-center gap-x-2">
-                        <img className="w-[32px] h-[32px]" src="/community.svg" alt="Community icon"/>
+                        <Image className="w-[32px] h-[32px]" src={communityIcon} width={32} height={32} alt="Community icon"/>
                         <h6 className="text-[28px] text-[#1E1E1E] font-bold">Active Community</h6>
                     </div>
                     <p className="text-[20px] font-normal text-[#1E1E1E]">Join thousands of makers who
@@ -45,7 +48,7 @@ export default function About() {
                 <div className="w-[1px] h-[123px] hidden lg:block border-[1px] border-[#DDDDDD] mx-8"></div>
                 <div>
                     <div className="flex items-center gap-x-2">
-                        <img className="w-[32px] h-[32px]" src="/flag.svg" alt="Flag icon"/>
+                        <Image className="w-[32px] h-[32px]" src={flagIcon} width={32} height={32} alt="Flag icon"/>
                         <h6 className="text-[28px] text-[#1E1E1E] font-bold">Free to Use</h6>
                     </div>
                     <p className="text-[20px] font-normal text-[#1E1E1E]">Most models are free to download,
