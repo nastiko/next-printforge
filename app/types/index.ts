@@ -17,3 +17,12 @@ export type ModelDetailsPageProps = {
         id: number,
     }>
 }
+
+// Component type - props
+export type ModelCardProps = {
+    model: Model
+}
+
+export type FormatDateContextType = {
+    formatDate: (dateAdded: string | number) => string;
+}
