@@ -1,15 +1,11 @@
 'use client';
-import {Model} from "@/app/types";
+import {ModelCardProps} from "@/app/types";
 import Image from "next/image";
 import Link from "next/link";
 import {FaRegHeart} from "react-icons/fa6";
 import {useFormatDateContext} from "@/contextProvider/FormatDateContext";
 
-interface ClientModelDescriptionProps {
-    model: Model;
-}
-
-export default function ClassDescription({model}: ClientModelDescriptionProps) {
+export default function ClassDescription({model}: ModelCardProps) {
     const {formatDate} = useFormatDateContext();
 
     return (

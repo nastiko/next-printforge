@@ -1,7 +1,5 @@
 import React from "react";
 
-export type RootLayoutProp = Readonly<{ children: React.ReactNode; }>
-
 export type Model = {
     id: number,
     name: string,
@@ -23,6 +21,12 @@ export type ModelCardProps = {
     model: Model
 }
 
+export type ModelCardsProps = {
+    data: Model[];
+}
+
 export type FormatDateContextType = {
     formatDate: (dateAdded: string | number) => string;
 }
+
+export type RootLayoutProp = Readonly<{ children: React.ReactNode; }>
