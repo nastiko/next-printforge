@@ -5,6 +5,7 @@ import {RootLayoutProp} from "@/app/types";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import FormatDateContext from "@/contextProvider/FormatDateContext";
+import LayoutWrapper from "@/app/components/LayoutWrapper";
 
 const albert_Sans = Albert_Sans({
     subsets: ["latin"],
@@ -22,13 +23,13 @@ export default function RootLayout({children}: RootLayoutProp) {
     return (
         <html lang="en">
         <body className={`${albert_Sans.className} ${montserrat.variable} box-border overflow-x-hidden`}>
-        <div className="h-screen flex flex-col justify-between">
+        <LayoutWrapper>
             <Header/>
             <FormatDateContext>
                 {children}
             </FormatDateContext>
             <Footer/>
-        </div>
+        </LayoutWrapper>
         </body>
         </html>
     );
