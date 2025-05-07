@@ -1,6 +1,6 @@
 import {Model, ModelDetailsPageProps} from "@/app/types";
 import {getModelById} from "@/app/lib/models";
-import ClientModelDescription from "@/app/models/[id]/component/ClientModelDescription";
+import ClientModelDescription from "@/app/models/id/component/ClientModelDescription";
 
 export default async function ModelDescription({params}: ModelDetailsPageProps) {
     const {id} = await params;

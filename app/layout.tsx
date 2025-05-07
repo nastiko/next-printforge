@@ -1,9 +1,9 @@
-import React from "react";
 import "./globals.css";
-import {Albert_Sans, Montserrat_Alternates} from "next/font/google";
+import React from "react";
 import {RootLayoutProp} from "@/app/types";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
+import {Albert_Sans, Montserrat_Alternates} from "next/font/google";
 import FormatDateContext from "@/contextProvider/FormatDateContext";
 import LayoutWrapper from "@/app/components/LayoutWrapper";
 

@@ -12,7 +12,13 @@ export type Model = {
 
 export type ModelDetailsPageProps = {
     params: Promise <{
-        id: number,
+        id: number
+    }>
+}
+
+export type ModelsByCategories = {
+    params: Promise <{
+        category: string
     }>
 }
 

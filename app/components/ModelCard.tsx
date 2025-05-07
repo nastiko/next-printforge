@@ -14,7 +14,7 @@ export default function ModelCard({model}: ModelCardProps) {
 
     return (
         <>
-            <Link href={`/models/${model.id}`} className="h-full flex flex-col border-[0.89px] border-[#A1A1A1] rounded-md transform scale-100 hover:scale-105 hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+            <Link href={`/models/id/${model.id}`} className="h-full flex flex-col border-[0.89px] border-[#A1A1A1] rounded-md transform scale-100 hover:scale-105 hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
                 <Image
                     className="w-full object-cover rounded-t-md"
                     src={model.image}
