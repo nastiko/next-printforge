@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "All",
+    "url": ""
+  },
+  {
+    "id": 2,
+    "title": "3D Printer",
+    "url": "3d-printer"
+  },
+  {
+    "id": 3,
+    "title": "Art",
+    "url": "art"
+  },
+  {
+    "id": 4,
+    "title": "Education",
+    "url": "education"
+  },
+  {
+    "id": 5,
+    "title": "Fashion",
+    "url": "fashion"
+  },
+  {
+    "id": 6,
+    "title": "Hobby & DIY",
+    "url": "hobby-diy"
+  },
+  {
+    "id": 7,
+    "title": "Household",
+    "url": "household"
+  },
+  {
+    "id": 8,
+    "title": "Miniatures",
+    "url": "miniatures"
+  },
+  {
+    "id": 9,
+    "title": "Tools",
+    "url": "tools"
+  },
+  {
+    "id": 10,
+    "title": "Toys & Games",
+    "url": "toys-games"
+  }
+]

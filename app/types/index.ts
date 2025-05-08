@@ -1,6 +1,6 @@
 import React from "react";
 
-export type Model = {
+export type Card = {
     id: number,
     name: string,
     description: string,
@@ -24,15 +24,26 @@ export type ModelsByCategories = {
 
 // Component type - props
 export type ModelCardProps = {
-    model: Model
+    model: Card;
 }
 
 export type ModelCardsProps = {
-    data: Model[];
+    data: Card[];
 }
 
 export type FormatDateContextType = {
     formatDate: (dateAdded: string | number) => string;
+}
+
+// Models nav
+export type navFilter = {
+    id: number,
+    title: string,
+    url: string,
+}
+
+export type navFilterProps = {
+    navData: navFilter[];
 }
 
 export type RootLayoutProp = Readonly<{ children: React.ReactNode; }>

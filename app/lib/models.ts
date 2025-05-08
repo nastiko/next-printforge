@@ -1,13 +1,18 @@
 import modelsData from "../data/models.json";
-import {Model} from "@/app/types";
+import navFilterData from "../data/navFilter.json";
+import {Card, navFilter} from "@/app/types";
 
-export async function getAllModels(): Promise<Model[]> {
+export async function getAllNav(): Promise<navFilter[]> {
+    return navFilterData;
+}
+
+export async function getAllModels(): Promise<Card[]> {
     return modelsData;
 }
 
-export async function getModelById(id: string | number): Promise<Model> {
+export async function getModelById(id: string | number): Promise<Card> {
     const foundModel = modelsData.find(
-        (model: Model) => model.id.toString() === id.toString(),
+        (model: Card) => model.id.toString() === id.toString(),
     );
     if (!foundModel) {
         throw new Error(`No model with id ${id}`);
@@ -15,9 +20,9 @@ export async function getModelById(id: string | number): Promise<Model> {
     return foundModel;
 }
 
-export async function getModelByCategory(category: string): Promise<Model[]> {
+export async function getModelByCategory(category: string): Promise<Card[]> {
     const filterModel = modelsData.filter(
-        (model: Model) => model.category.toUpperCase() === category.toUpperCase(),
+        (model: Card) => model.category.toUpperCase() === category.toUpperCase(),
     );
     if (!filterModel) {
         throw new Error(`No model with category ${category}`);
