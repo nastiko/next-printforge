@@ -2,6 +2,7 @@ import Image from "next/image";
 
 //Images
 import homeFrame from "@/public/home-frame.png";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -16,10 +17,10 @@ export default function Home() {
                         <p className="text-lg tracking-normal text-[#1E1E1E] font-normal my-6">Join
                             our community of creators and explore a vast library of user-submitted models.</p>
                     </div>
-                    <a href="#"
+                    <Link href={'/models'}
                        className="w-max text-[20px] font-medium uppercase text-[#000000] border-[2px] border-[#000000]
                                       transition duration-100 bg-#ffffff hover:bg-black hover:text-[#ffffff] px-6 py-3">Browse
-                        models</a>
+                        models</Link>
                 </div>
                 <div className="w-[350px] order-1 md:order-2">
                     <Image className="w-full" src={homeFrame} alt="Home Frame Image"/>

@@ -7,7 +7,7 @@ export default function ClientModelCards({data}: ModelCardsProps) {
         <>
             <div className="flex flex-col xl:flex-row gap-x-32 px-[25px]">
                 <div
-                    className="flex xl:flex-col xl:justify-center gap-x-2 xl:gap-x-0 overflow-x-scroll scrollbar scrollbar-thumb-transparent [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] xl:overflow-x-hidden snap-mandatory mb-5 mt-4 xl:mt-0">
+                    className="flex xl:gap-x-0 max-xl:overflow-x-scroll max-xl:scrollbar max-xl:scrollbar-thumb-transparent max-xl:[&::-webkit-scrollbar]:hidden max-xl:[-ms-overflow-style:none] max-xl:[scrollbar-width:none] max-xl:snap-mandatory mb-5 mt-4 xl:my-0">
                     <GetNavFilter />
                 </div>
                 <div className="w-full">

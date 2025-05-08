@@ -5,13 +5,14 @@ import aboutFrame from "@/public/about-frame.png";
 import modelsIcon from "@/public/models.svg";
 import communityIcon from "@/public/community.svg";
 import flagIcon from "@/public/flag.svg";
+import watermark from "@/public/watermark.png";
 
 export default function About() {
     return (
         <>
             <section className="max-w-7xl flex flex-col md:flex-row items-center justify-between gap-y-2 gap-x-16 px-[25px] xl:px-0 mx-auto">
                 <div className="w-full">
-                    <Image className="object-cover" src={aboutFrame} width={627} height={627} alt="About Frame Image"/>
+                    <Image className="w-full object-cover" src={aboutFrame} width={627} height={627} alt="About Frame Image"/>
                 </div>
                 <div>
                     <p className="text-[14px] md:text-[20px] text-[#1E1E1E] font-normal tracking-[5%] uppercase mb-6">About
@@ -67,6 +68,9 @@ export default function About() {
                     hobbyist looking for your next weekend project, an educator seeking teaching materials, or a
                     professional designer wanting to share your creations, PrintForge provides the tools and community
                     to support your journey in 3D printing.</p>
+            </section>
+            <section className="flex justify-center items-center mt-10">
+                <Image src={watermark} alt="Watermark" className="w-[140px] object-cover" width={1140} height={140} />
             </section>
         </>
     )

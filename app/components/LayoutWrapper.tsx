@@ -4,7 +4,7 @@ import {usePathname} from "next/navigation";
 
 export default function Layout({children}: RootLayoutProp) {
     const pathname: string = usePathname()
-    const isModelsPage : boolean = pathname.includes("/models");
+    const isModelsPage : boolean = pathname === "/models";
 
     return (
         <>
