@@ -16,11 +16,14 @@ export default function ModelCard({model}: ModelCardProps) {
         <>
             <Link href={`/models/id/${model.id}`} className="h-full flex flex-col border-[0.89px] border-[#A1A1A1] rounded-md transform scale-100 hover:scale-105 hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
                 <Image
-                    className="w-full object-cover rounded-t-md"
+                    className="w-full h-[368px] object-cover rounded-t-md"
                     src={model.image}
                     alt={model.name}
-                    width={268}
-                    height={268}
+                    width={368}
+                    height={368}
+                    sizes="(min-width: 1840px) calc(25vw - 107px), (min-width: 1560px) calc(10.77vw + 152px), (min-width: 1520px) calc(-275vw + 4555px),
+                    (min-width: 1280px) calc(22.27vw + 35px), (min-width: 1040px) calc(28.18vw + 26px), (min-width: 800px) calc(50vw - 42px),
+                    (min-width: 640px) calc(19.29vw + 197px), (min-width: 400px) calc(98.64vw - 44px), 334px"
                 />
                 <div className="h-full flex flex-col justify-between p-3">
                     <div>

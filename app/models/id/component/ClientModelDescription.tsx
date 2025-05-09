@@ -14,9 +14,10 @@ export default function ClassDescription({model}: ModelCardProps) {
                 <Image
                     src={model.image}
                     alt={model.name}
-                    width={902}
-                    height={902}
-                    className="w-full xl:w-[902px] object-cover mt-10 lg:mt-0"
+                    width={662}
+                    height={662}
+                    sizes="(min-width: 1280px) 662px, (min-width: 1040px) calc(29.55vw + 213px), (min-width: 540px) 459px, calc(94.55vw - 33px)"
+                    className="w-full h-[350px] sm:h-[662px] sm:w-[662px] object-cover mt-10 lg:mt-0"
                 />
                 <div className="">
                     <div className="absolute top-0">
@@ -39,5 +40,4 @@ export default function ClassDescription({model}: ModelCardProps) {
             </div>
         </>
     )
-
 }
