@@ -3,6 +3,7 @@ import Image from "next/image";
 //Images
 import homeFrame from "@/public/home-frame.png";
 import Link from "next/link";
+import React from "react";
 
 export default function Home() {
     return (
@@ -22,7 +23,7 @@ export default function Home() {
                                       transition duration-100 bg-#ffffff hover:bg-black hover:text-[#ffffff] px-6 py-3">Browse
                         models</Link>
                 </div>
-                <div className="w-[350px] order-1 md:order-2">
+                <div className="w-full md:w-[350px] order-1 md:order-2">
                     <Image className="w-full" src={homeFrame} alt="Home Frame Image"/>
                 </div>
             </div>
